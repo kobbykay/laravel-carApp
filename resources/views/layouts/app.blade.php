@@ -89,16 +89,15 @@ if(Session::has('user'))
 
                         @endif
 
-
-
-
-
-
-
-
-
-
                     </ul>
+
+                    <form action="/search" class="navbar-form navbar-left">
+                        <div class="form-group">
+                          <input type="text" name="query" class="form-control search-box" placeholder="Search Vehicle">
+                        </div>
+                        <button type="submit" class="btn btn-success">Search</button>
+                      </form>
+
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav navbar-right">
@@ -187,6 +186,7 @@ if(Session::has('user'))
         width: 20%;
         margin:10px;
     }
+
     .trening-item-ad {
         float: left;
         width: 40%;
@@ -206,7 +206,7 @@ if(Session::has('user'))
     }
 
     .search-box {
-        width: 500px !important
+        width: 400px !important
     }
 
     .cart-list-devider {

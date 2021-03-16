@@ -228,12 +228,12 @@ class ProductController extends Controller
 
          $count = $orders->count();
          if($count <= 0){
+
             return dd($count);
+
          }else{
               return view('admin.orderstatus',['orders'=>$orders]);
          }
-
-         // return dd($count);
 
     }
 
